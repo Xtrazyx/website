@@ -1,31 +1,7 @@
 import Layout from '../components/layout';
 import Fill from '../components/fill';
 import Menu from '../components/menu';
-import Image from 'next/image';
-
-const technos = [
-    'js',
-    'ts',
-    'react',
-    'nextjs',
-    'nodejs',
-    'mobx',
-    'html',
-    'webpack',
-    'babel',
-    'docker',
-    'mysql',
-    'mongodb',
-    'mui',
-    'css',
-    'yarn',
-    'gitlab',
-    'git',
-    'jamstack',
-    'figma',
-    'illustrator',
-    'photoshop',
-];
+import Bottom from '../components/bottom';
 
 const Home = () => {
     return (
@@ -36,12 +12,15 @@ const Home = () => {
                         {
                             label: <span>Julien Habert</span>,
                             color: 'green',
+                            id: 'menu_jh',
                         },
                         {
                             label: <span>Contact / Tarifs</span>,
                             color: 'yellow',
+                            id: 'menu_tarifs',
                         },
                     ]}
+                    active={'menu_jh'}
                 />
             }
             content={
@@ -98,21 +77,7 @@ const Home = () => {
                 </div>
             }
             bottom={
-                <div className="grid-background">
-                    <Image src={'/jh_portrait.png'} width={'460px'} height={'415px'} />
-
-                    <div className="grid">
-                        {technos.map((techno, index) => (
-                            <div key={index} className="grid-item">
-                                <Image
-                                    src={`/technos/${techno}.png`}
-                                    width={'75px'}
-                                    height={techno === 'nextjs' ? '45px' : '75px'}
-                                />
-                            </div>
-                        ))}
-                    </div>
-                </div>
+                <Bottom />
             }
             footer={
                 <>

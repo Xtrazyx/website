@@ -1,17 +1,20 @@
 import { FunctionComponent } from "react";
 
 export type MenuItemProps = {
+  id: string;
   label: JSX.Element;
   color?: "white" | "yellow" | "blue" | "turquoise" | "orange" | "green";
   url?: string;
+  className?: string;
+  active?: string;
 };
 
 const MenuItem: FunctionComponent<MenuItemProps> = (props) => {
-  const { label, color = "white", url } = props;
+  const { label, color = "white", url, active, id } = props;
 
   return (
-    <div className="item line-color">
-      <button className="button" onClick={() => console.log("toto")}>
+    <div className={`${active === id ? 'active' : 'item'} line-color`}>
+      <button className={`${active === id && 'button-active'} button`} onClick={() => console.log("toto")}>
         {label}
       </button>
 
@@ -33,13 +36,13 @@ const MenuItem: FunctionComponent<MenuItemProps> = (props) => {
         }
 
         .button:hover {
+          font-size: 32px;
           cursor: pointer;
           color: var(--font-${color});
-          font-size: 32px;
         }
 
         .item {
-          margin: 12px 0;
+          margin: 24px 0;
           width: 238px;
           font-size: 24px;
           color: var(--font-white);
@@ -48,6 +51,17 @@ const MenuItem: FunctionComponent<MenuItemProps> = (props) => {
 
         .item:hover {
           width: 284px;
+          font-size: 32px;
+          cursor: pointer;
+          color: var(--font-${color});
+        }
+
+        .active {
+          width: 284px;
+          pointer-events: none;
+        }
+
+        .button-active {
           font-size: 32px;
           color: var(--font-${color});
         }
