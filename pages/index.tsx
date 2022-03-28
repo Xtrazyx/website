@@ -6,6 +6,7 @@ import Bottom from '../components/bottom';
 const Home = () => {
     return (
         <Layout
+            title="Dev Fullstack Freelance - Julien Habert"
             menu={
                 <Menu
                     entries={[
@@ -13,11 +14,13 @@ const Home = () => {
                             label: <span>Julien Habert</span>,
                             color: 'green',
                             id: 'menu_jh',
+                            url: '/',
                         },
                         {
                             label: <span>Contact / Tarifs</span>,
                             color: 'yellow',
                             id: 'menu_tarifs',
+                            url: '/tarifs',
                         },
                     ]}
                     active={'menu_jh'}
@@ -32,16 +35,17 @@ const Home = () => {
                     <p>
                         Je suis spécialisé depuis + de 5 ans dans les technologies web avec un fort penchant pour le{' '}
                         <span className="color-yellow weight-bold">Javascript</span> et le{' '}
-                        <span className="color-blue weight-bold">Typescript</span> : alliance entre flexibilité et
+                        <span className="color-blue weight-bold">Typescript</span> :<br /> alliance entre flexibilité et
                         rigueur dans l’implémentation, ces languages omniprésents aussi bien en front qu’en back sont
                         synonymes de modernité et bénéficient d’un écosystème riche en librairies et frameworks.
                     </p>
                     <p>
                         Au cours de ces années mon expérience s’est focalisée principalement sur l’
-                        <span className="color-orange weight-bold">UX/UI</span> ainsi que l'architecture front dans le
-                        domaine des services financiers : beaucoup de{' '}
-                        <span className="color-turquoise weight-bold">React</span> et de temps réel pilotant des
-                        interfaces procédurales.
+                        <span className="color-orange weight-bold">UX/UI</span> ainsi que{' '}
+                        <span className="color-green weight-bold">l'architecture front</span> dans le domaine des
+                        services financiers :<br /> j'ai donc pratiqué extensivement la librairie{' '}
+                        <span className="color-turquoise weight-bold">ReactJs</span> ainsi que le temps réel pour
+                        piloter des interfaces procédurales.
                     </p>
                     <p>
                         Dans une <span className="color-green weight-bold">approche produit holostique</span> appuyée
@@ -64,21 +68,18 @@ const Home = () => {
                                 je fabrique des{' '}
                                 <span className="color-turquoise weight-bold">
                                     composants d’UI cohérents et composables
-                                </span>{' '}
-                                (React !)
+                                </span>
                             </li>
                             <li>
                                 je <span className="color-red weight-bold">brainstorm</span> avec vous pour faire
                                 émerger vos idées en fonctions opérables
                             </li>
-                            <li>...et bien plus encore 🚀</li>
                         </ul>
+                        <span className="big">...et bien plus encore 🚀</span>
                     </p>
                 </div>
             }
-            bottom={
-                <Bottom />
-            }
+            bottom={<Bottom />}
             footer={
                 <>
                     <Fill />

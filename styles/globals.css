@@ -63,6 +63,13 @@
     font-weight: 600;
 }
 
+.big {
+    font-weight: 600;
+    font-size: 32px;
+    margin-top: 48px;
+    line-height: 52px;
+}
+
 /* Tags */
 html,
 body {
@@ -83,6 +90,11 @@ h1 {
     font-family: Quicksand;
 }
 
+h2 {
+    font-size: 32px;
+    font-family: Poppins;
+}
+
 p {
     font-weight: 300;
     font-size: 18px;
@@ -90,22 +102,13 @@ p {
 
 /* Layout Classes */
 .main {
-    --angle: 0deg;
     display: flex;
     flex-direction: column;
     align-items: center;
     min-height: 100vh;
     width: 100vw;
     align-items: center;
-    background: linear-gradient(
-        var(--angle),
-        #211e46,
-        var(--bg-black),
-        var(--bg-black),
-        var(--bg-black),
-        #172524,
-        #172524
-    );
+    background: linear-gradient(0deg, #211e46, var(--bg-black), var(--bg-black), var(--bg-black), #172524, #172524);
     background-size: 250% 250%;
     background-position: 0% 0%;
     /* animation: 30s slide linear infinite; */
@@ -121,10 +124,14 @@ p {
     padding: 0;
 }
 
+.top {
+  width: 100%;
+}
+
 .content {
     display: flex;
     justify-content: space-between;
-    width: min(100%, 2560px);
+    width: min(100%, 2100px);
 }
 
 .section {
@@ -133,25 +140,27 @@ p {
 }
 
 .bottom-section {
-    align-self: flex-end;
-    width: 100%;
     display: flex;
+    position: relative;
+    width: 100%;
+    align-self: flex-end;
     align-items: flex-end;
 }
 
 .header {
-    background-color: var(--bg-grey);
     width: 100%;
     min-height: var(--header-height);
-    padding: 16px 14px 12px 14px;
+    padding: 18px 64px;
 }
 
 .footer {
+    position: absolute;
+    bottom: 12px;
+    right: 12px;
     display: flex;
     align-items: center;
     width: 100%;
     min-height: var(--footer-height);
-    background-color: var(--bg-grey);
     font-weight: 300;
     font-size: 14px;
     padding: 18px 64px;
@@ -159,7 +168,7 @@ p {
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(7, 125px);
+    grid-template-columns: repeat(7, 100px);
     margin-left: 5%;
     margin-top: 24px;
     width: 50%;
@@ -216,15 +225,22 @@ p {
         justify-content: flex-end;
         width: 100%;
         margin-top: 24px;
+        margin-bottom: 64px;
+    }
+
+    .header, .footer {
+      padding: 24px;
     }
 }
 
 @media screen and (min-width: 1900px) {
-    .section {
+    .section, .grid-background, .header {
         padding-left: 256px;
     }
 
-    .grid-background {
-        padding-left: 256px;
+    .grid {
+        justify-content: start;
+        width: 75%;
+        grid-template-columns: repeat(7, 120px);
     }
 }
