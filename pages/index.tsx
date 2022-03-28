@@ -45,13 +45,13 @@ const Home = () => {
                 />
             }
             content={
-                <>
+                <div className="text">
                     <h1>
                         <span className="color-red weight-medium">Passionné</span> de création informatique <br /> since
                         1978 (almost)
                     </h1>
                     <p>
-                        Je suis spécialisé depuis +5 ans dans les technologies web avec un fort penchant pour le{' '}
+                        Je suis spécialisé depuis + de 5 ans dans les technologies web avec un fort penchant pour le{' '}
                         <span className="color-yellow weight-bold">Javascript</span> et le{' '}
                         <span className="color-blue weight-bold">Typescript</span> : alliance entre flexibilité et
                         rigueur dans l’implémentation, ces languages omniprésents aussi bien en front qu’en back sont
@@ -95,7 +95,7 @@ const Home = () => {
                             <li>...et bien plus encore 🚀</li>
                         </ul>
                     </p>
-                </>
+                </div>
             }
             bottom={
                 <div className="grid-background">

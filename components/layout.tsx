@@ -19,7 +19,6 @@ const Layout: FunctionComponent<Props> = (props) => {
         <section className="section">
           {content}
         </section>
-        <Fill/>
         <menu className="menu">{menu}</menu>
       </div>
       <Fill/>
