@@ -134,6 +134,12 @@ p {
     width: min(100%, 2100px);
 }
 
+.bottom-content {
+    display: flex;
+    justify-content: flex-start;
+    width: min(100%, 2100px);
+}
+
 .section {
     width: calc(100% - 300px);
     padding: 24px 128px 24px 68px;
@@ -171,7 +177,6 @@ p {
     grid-template-columns: repeat(7, 100px);
     margin-left: 5%;
     margin-top: 24px;
-    width: 50%;
     justify-items: center;
     justify-content: center;
 }
@@ -204,7 +209,7 @@ p {
         grid-gap: 12px 12px;
     }
 
-    .grid-background {
+    .bottom-content {
         flex-wrap: wrap;
         flex-direction: column-reverse;
         align-items: center;
@@ -233,14 +238,13 @@ p {
     }
 }
 
-@media screen and (min-width: 1900px) {
-    .section, .grid-background, .header {
-        padding-left: 256px;
-    }
-
+@media screen and (min-width: 2100px) {
     .grid {
         justify-content: start;
-        width: 75%;
         grid-template-columns: repeat(7, 120px);
+    }
+
+    .content, .bottom-content {
+        margin: auto;
     }
 }
