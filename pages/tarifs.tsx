@@ -2,7 +2,6 @@ import Layout from '../components/layout';
 import Fill from '../components/fill';
 import Menu from '../components/menu';
 import Bottom from '../components/bottom';
-import Script from 'next/script';
 import CTA from '../components/cta';
 import Icon from '../components/icon';
 
