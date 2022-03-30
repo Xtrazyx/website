@@ -4,6 +4,7 @@ import Menu from '../components/menu';
 import Bottom from '../components/bottom';
 import CTA from '../components/cta';
 import Icon from '../components/icon';
+import { menuEntries } from '../config';
 
 const Tarifs = () => {
     return (
@@ -11,20 +12,7 @@ const Tarifs = () => {
             title={'Tarifs et contact'}
             menu={
                 <Menu
-                    entries={[
-                        {
-                            label: <span>Julien Habert</span>,
-                            color: 'green',
-                            id: 'menu_jh',
-                            url: '/',
-                        },
-                        {
-                            label: <span>Contact / Tarifs</span>,
-                            color: 'yellow',
-                            id: 'menu_tarifs',
-                            url: '/tarifs',
-                        },
-                    ]}
+                    entries={menuEntries}
                     active={'menu_tarifs'}
                 />
             }

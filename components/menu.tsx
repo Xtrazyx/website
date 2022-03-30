@@ -4,7 +4,7 @@ import { v4 as uuidv4 } from 'uuid';
 
 export type MenuProps = {
     entries: MenuItemProps[];
-    active?: string;
+    active?: 'menu_jh' | 'menu_tarifs' | 'sandpiles' ;
 };
 
 const Menu: FunctionComponent<MenuProps> = (props) => {

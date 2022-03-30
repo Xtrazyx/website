@@ -2,6 +2,7 @@ import Layout from '../components/layout';
 import Fill from '../components/fill';
 import Menu from '../components/menu';
 import Bottom from '../components/bottom';
+import { menuEntries } from '../config';
 
 const Home = () => {
     return (
@@ -9,20 +10,7 @@ const Home = () => {
             title="Dev Fullstack Freelance - Julien Habert"
             menu={
                 <Menu
-                    entries={[
-                        {
-                            label: <span>Julien Habert</span>,
-                            color: 'green',
-                            id: 'menu_jh',
-                            url: '/',
-                        },
-                        {
-                            label: <span>Contact / Tarifs</span>,
-                            color: 'yellow',
-                            id: 'menu_tarifs',
-                            url: '/tarifs',
-                        },
-                    ]}
+                    entries={menuEntries}
                     active={'menu_jh'}
                 />
             }

@@ -44,7 +44,7 @@ const MenuItem: FunctionComponent<MenuItemProps> = (props) => {
                     }
 
                     .item {
-                        margin: 24px 0;
+                        margin: 12px 0;
                         width: 238px;
                         font-size: 24px;
                         color: var(--font-white);
@@ -60,6 +60,7 @@ const MenuItem: FunctionComponent<MenuItemProps> = (props) => {
 
                     .active {
                         width: 284px;
+                        margin: 18px 0;
                         pointer-events: none;
                     }
 
