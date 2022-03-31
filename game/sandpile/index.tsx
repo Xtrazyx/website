@@ -11,7 +11,7 @@ const Main = styled('div')`
     display: flex;
     justify-content: center;
     align-items: center;
-    @media (max-width: 1200px) {
+    @media (max-width: 1500px) {
         display: flex;
         height: 100%;
         width: 100%;
@@ -31,7 +31,7 @@ const LeftColumn = styled('div')`
     height: 100%;
     width: ${COL_OFFSET}px;
     border-right: solid 1px #fba22e;
-    @media (max-width: 1200px) {
+    @media (max-width: 1500px) {
         position: relative;
         left: auto;
         height: auto;
@@ -55,7 +55,7 @@ const RightColumn = styled('div')`
     height: 100%;
     width: ${COL_OFFSET}px;
     border-left: solid 1px #fba22e;
-    @media (max-width: 1200px) {
+    @media (max-width: 1500px) {
         position: relative;
         right: auto;
         height: auto;
@@ -75,7 +75,7 @@ const Tools = styled('div')`
     justify-content: center;
     padding-right: 24px;
     font-size: 24px;
-    @media (max-width: 1200px) {
+    @media (max-width: 1500px) {
         align-items: center;
         margin-top: 12px;
     }
@@ -87,7 +87,7 @@ const Board = styled('div')`
     align-items: center;
     justify-content: center;
     flex-basis: 640px;
-    @media (max-width: 1200px) {
+    @media (max-width: 1500px) {
         position: relative;
         flex-direction: column-reverse;
         right: auto;
@@ -104,7 +104,7 @@ const Message = styled('div')`
     padding-left: 24px;
     align-items: flex-start;
     justify-content: center;
-    @media (max-width: 1200px) {
+    @media (max-width: 1500px) {
         padding-left: 0;
         margin-bottom: 12px;
     }

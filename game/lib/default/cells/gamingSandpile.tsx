@@ -40,6 +40,7 @@ const SandPileColor = styled.button <SandPileColorType>`
     font-family: 'Quicksand', sans-serif;
     font-size: 1.25rem;
     color: #2f2f2f;
+    border-radius: 12px;
     background-color: ${({ bgColor }) => bgColor};
     ${({ owner, colors }) =>
         `
@@ -66,6 +67,11 @@ const SandPileColor = styled.button <SandPileColorType>`
 
     &:hover {
         border: 3px dashed ${({ selectColor }) => selectColor};
+    }
+
+    @media screen  and (max-width: 650px) {
+        font-size: 0.85rem;
+        border-radius: 6px;
     }
 `;
 
