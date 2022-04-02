@@ -41,6 +41,7 @@ const Tarifs = () => {
                     <div className={'social'}>
                         <Icon icon='linkedIn' url='https://www.linkedin.com/in/singular/'/>
                         <Icon icon='twitter' url='https://twitter.com/Xtrazyx'/>
+                        <Icon icon='github' url='https://github.com/Xtrazyx'/>
                     </div>
 
                     <style jsx>{`
