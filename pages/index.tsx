@@ -3,17 +3,13 @@ import Fill from '../components/fill';
 import Menu from '../components/menu';
 import Bottom from '../components/bottom';
 import { menuEntries } from '../config';
+import CTA from '../components/cta';
 
 const Home = () => {
     return (
         <Layout
             title="Dev Fullstack Freelance - Julien Habert"
-            menu={
-                <Menu
-                    entries={menuEntries}
-                    active={'menu_jh'}
-                />
-            }
+            menu={<Menu entries={menuEntries} active={'menu_jh'} />}
             content={
                 <div className="text">
                     <h1>
@@ -64,6 +60,9 @@ const Home = () => {
                             </li>
                         </ul>
                         <span className="big">...et bien plus encore 🚀</span>
+                        <p>
+                            <CTA label={<span>Me contacter</span>} url={'/tarifs'} />
+                        </p>
                     </p>
                 </div>
             }
