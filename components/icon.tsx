@@ -22,7 +22,7 @@ const Icon: FunctionComponent<Props> = (props) => {
 
     return (
         <Link passHref as={url} href={url}>
-            <button className={`button`}>
+            <a target={'_blank'} className={`button`}>
                 <Icon/>
                 <style jsx>{`
                     .button {
@@ -52,7 +52,7 @@ const Icon: FunctionComponent<Props> = (props) => {
                     }
 
                 `}</style>
-            </button>
+            </a>
         </Link>
     );
 };

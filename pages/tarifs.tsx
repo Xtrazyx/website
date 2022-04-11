@@ -31,6 +31,7 @@ const Tarifs = () => {
                        <CTA
                         label={<span>Prendre rendez-vous</span>}
                         url={'https://calendly.com/freelance-julien-habert/rdv-prise-de-contact'}
+                        external
                     /> 
                     </p><br/>
                     

@@ -4,14 +4,17 @@ import Link from 'next/link';
 export type Props = {
     label?: JSX.Element;
     url?: string;
+    external?: boolean;
 };
 
 const CTA: FunctionComponent<Props> = (props) => {
-    const { label, url = '' } = props;
+    const { label, url = '', external } = props;
+
+    const Tag = external ? 'a' : 'button';
 
     return (
         <Link passHref as={url} href={url}>
-            <button className={`button`}>
+            <Tag {...(external ? {target: '_blank'} : {})} className={`button`}>
                 {label}
                 <style jsx>{`
                     .button {
@@ -35,7 +38,7 @@ const CTA: FunctionComponent<Props> = (props) => {
                         cursor: pointer;
                     }
                 `}</style>
-            </button>
+            </Tag>
         </Link>
     );
 };
