@@ -4,14 +4,16 @@ import Menu from '../components/menu';
 import Bottom from '../components/bottom';
 import { menuEntries } from '../config';
 import CTA from '../components/cta';
+import Avatar from '../components/avatar';
 
 const Home = () => {
     return (
         <Layout
-            title="Dev Fullstack Freelance - Julien Habert"
+            title="Dev Fullstack Freelance - Julien Habert - Home"
             menu={<Menu entries={menuEntries} active={'menu_jh'} />}
             content={
                 <div className="text">
+                    <Avatar />
                     <h1>
                         <span className="color-red weight-medium">Passionné</span> de création informatique <br /> since
                         1978 (almost)

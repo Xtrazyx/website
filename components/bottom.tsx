@@ -29,16 +29,10 @@ const Bottom: FunctionComponent = () => {
     return (
         <div className="grid-background">
             <div className="bottom-content">
-                <Image src={'/jh_portrait.png'} width={'460px'} height={'415px'} />
-
                 <div className="grid">
                     {technos.map((techno, index) => (
                         <div key={index} className="grid-item">
-                            <Image
-                                src={`/technos/${techno}.png`}
-                                width={'75px'}
-                                height={techno === 'nextjs' ? '45px' : '75px'}
-                            />
+                            <Image src={`/technos/${techno}.png`} width={'75px'} height={'75px'} />
                         </div>
                     ))}
                 </div>

@@ -38,7 +38,7 @@ const Menu: FunctionComponent<MenuProps> = (props) => {
                     }
                 }
 
-                @media screen and (min-width: 2100px) {
+                @media screen and (min-width: 1800px) {
                     .container {
                         border-right: 4px solid var(--font-orange);
                     }

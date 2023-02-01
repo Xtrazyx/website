@@ -64,6 +64,7 @@ const SandPileColor = styled.button <SandPileColorType>`
     ${({ borderSize }) => `border-width: ${borderSize}px`};
     padding: 0;
     margin: 0;
+    transition: all 750ms;
 
     &:hover {
         border: 3px dashed ${({ selectColor }) => selectColor};

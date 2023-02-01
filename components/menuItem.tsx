@@ -32,13 +32,13 @@ const MenuItem: FunctionComponent<MenuItemProps> = (props) => {
                         font-family: Quicksand;
                         font-weight: 300;
                         text-align: left;
-                        font-size: 24px;
+                        font-size: var(--menu-font-size);
                         color: var(--font-white);
                         transition-duration: 0.4s;
                     }
 
                     .item:hover button {
-                        font-size: 32px;
+                        font-size: var(--menu-font-size-active);
                         cursor: pointer;
                         color: var(--font-${color});
                     }
@@ -46,14 +46,14 @@ const MenuItem: FunctionComponent<MenuItemProps> = (props) => {
                     .item {
                         margin: 12px 0;
                         width: 238px;
-                        font-size: 24px;
+                        font-size: var(--menu-font-size);
                         color: var(--font-white);
                         transition-duration: 0.4s;
                     }
 
                     .item:hover {
                         width: 284px;
-                        font-size: 32px;
+                        font-size: var(--menu-font-size-active);
                         cursor: pointer;
                         color: var(--font-${color});
                     }
@@ -65,7 +65,7 @@ const MenuItem: FunctionComponent<MenuItemProps> = (props) => {
                     }
 
                     .button-active {
-                        font-size: 32px;
+                        font-size: var(--menu-font-size-active);
                         color: var(--font-${color});
                     }
                 `}</style>

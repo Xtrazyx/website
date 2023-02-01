@@ -7,7 +7,7 @@ import SandpileGame from '../game/sandpile';
 const Sandpiles = () => {
     return (
         <Layout
-            title="Dev Fullstack Freelance - Julien Habert"
+            title="Dev Fullstack Freelance - Julien Habert - Sandpile game"
             menu={
                 <Menu
                     entries={menuEntries}
