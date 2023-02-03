@@ -1,4 +1,4 @@
-import type { MenuItemProps } from "../components/menuItem";
+import type { MenuItemProps } from '@singular/components/menuItem';
 
 export const menuEntries: MenuItemProps[] = [
     {
@@ -18,5 +18,5 @@ export const menuEntries: MenuItemProps[] = [
         color: 'orange',
         id: 'sandpiles',
         url: '/sandpiles',
-    }
+    },
 ];

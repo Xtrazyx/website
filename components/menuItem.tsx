@@ -14,7 +14,7 @@ const MenuItem: FunctionComponent<MenuItemProps> = (props) => {
     const { label, color = 'white', url, active, id } = props;
 
     return (
-        <Link passHref href={url}>
+        <Link passHref href={url} legacyBehavior>
             <div className={`${active === id ? 'active' : 'item'} line`}>
                 <button className={`${active === id && 'button-active'} button`}>
                     {label}

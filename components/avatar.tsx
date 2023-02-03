@@ -15,10 +15,10 @@ const Avatar: FunctionComponent = () => {
         >
             <Image
                 style={{ transform: 'translate(-32px, 12px)' }}
+                alt={'Portrait Julien Habert'}
                 src={'/jh_portrait.png'}
                 width={230}
                 height={207}
-                layout={'fixed'}
             />
         </div>
     );

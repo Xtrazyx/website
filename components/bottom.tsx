@@ -32,7 +32,7 @@ const Bottom: FunctionComponent = () => {
                 <div className="grid">
                     {technos.map((techno, index) => (
                         <div key={index} className="grid-item">
-                            <Image src={`/technos/${techno}.png`} width={'75px'} height={'75px'} />
+                            <Image src={`/technos/${techno}.png`} width={75} height={75} alt={`logo of ${techno}`} />
                         </div>
                     ))}
                 </div>

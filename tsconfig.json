@@ -1,5 +1,13 @@
 {
   "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+     "@singular/components/*": ["components/*"],
+     "@singular/config/*": ["config/*"],
+     "@singular/game/*": ["game/*"],
+     "@singular/styles/*": ["styles/*"],
+     "@singular/pages/*": ["pages/*"]
+    },
     "target": "es5",
     "lib": [
       "dom",
@@ -24,6 +32,7 @@
     "**/*.tsx"
   ],
   "exclude": [
-    "node_modules"
+    "node_modules",
+    "__tests__"
   ]
 }

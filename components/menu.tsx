@@ -1,6 +1,5 @@
 import { FunctionComponent } from 'react';
 import MenuItem, { MenuItemProps } from './menuItem';
-import { v4 as uuidv4 } from 'uuid';
 
 export type MenuProps = {
     entries: MenuItemProps[];

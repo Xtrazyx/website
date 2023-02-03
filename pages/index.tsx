@@ -1,10 +1,11 @@
-import Layout from '../components/layout';
-import Fill from '../components/fill';
-import Menu from '../components/menu';
-import Bottom from '../components/bottom';
-import { menuEntries } from '../config';
-import CTA from '../components/cta';
-import Avatar from '../components/avatar';
+import { menuEntries } from '@singular/config/index';
+
+import Layout from '@singular/components/layout';
+import Fill from '@singular/components/fill';
+import Menu from '@singular/components/menu';
+import Bottom from '@singular/components/bottom';
+import CTA from '@singular/components/cta';
+import Avatar from '@singular/components/avatar';
 
 const Home = () => {
     return (
