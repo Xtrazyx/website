@@ -1,9 +1,9 @@
-/* Global */
+/* Global ====================================================================== */
 * {
     box-sizing: border-box;
 }
 
-/* Vars */
+/* Vars ======================================================================== */
 :root {
     --bg-grey: #505252;
     --bg-black: #1b1f24;
@@ -24,7 +24,7 @@
     --bp-large: 1800px;
 }
 
-/* Text Utils */
+/* Text Utils ================================================================== */
 .color-yellow {
     color: var(--font-yellow);
 }
@@ -80,7 +80,7 @@
     line-height: 52px;
 }
 
-/* Tags */
+/* Tags ======================================================================== */
 html,
 body {
     padding: 0;
@@ -109,8 +109,8 @@ p {
     font-weight: 300;
     font-size: 18px;
 }
- 
-/* Layout Classes */
+
+/* Layout Classes ============================================================== */
 .main {
     display: flex;
     flex-direction: column;
@@ -118,12 +118,7 @@ p {
     min-height: 100vh;
     width: 100vw;
     align-items: center;
-    background-image: linear-gradient(
-        45deg,
-        var(--bg-black) 30%,
-        #20202b,
-        var(--bg-black) 70%
-    );
+    background-image: linear-gradient(45deg, var(--bg-black) 30%, #20202b, var(--bg-black) 70%);
     background-size: 200%;
     background-position: 0% 0%;
     animation: 20s slide alternate infinite;
@@ -147,6 +142,11 @@ p {
     display: flex;
     justify-content: space-between;
     width: min(100%, var(--bp-large));
+}
+
+.filler {
+    flex-grow: 1;
+    flex-shrink: 0;
 }
 
 .bottom-content {
@@ -221,7 +221,30 @@ p {
     animation: flicker infinite alternate ease-in 500ms;
 }
 
-/* Sandpile css */
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.title-logo {
+    font-weight: 100;
+    font-size: 28px;
+    margin-left: 12px;
+}
+
+.menu-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.menu-filler {
+    height: 0;
+    width: 0;
+}
+
+/* Sandpile css ================================================================ */
 .default {
     display: grid;
 }
@@ -246,7 +269,7 @@ p {
     font-weight: 700;
 }
 
-/* Responsive */
+/* Responsive ================================================================== */
 @media screen and (max-width: 1200px) {
     .grid {
         margin-left: 0;
@@ -286,6 +309,12 @@ p {
     .footer {
         padding: 24px;
     }
+
+    .menu-container {
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        width: 300px;
+    }
 }
 
 @media screen and (max-width: 650px) {
@@ -305,9 +334,18 @@ p {
     .bottom-content {
         margin: auto;
     }
+
+    .menu-container {
+        border-right: 4px solid var(--font-orange);
+    }
+
+    .menu-filler {
+        height: 48px;
+        width: 100%;
+    }
 }
 
-/* Animation */
+/* Animation =================================================================== */
 @keyframes flicker {
     from {
         opacity: 1;

@@ -1,10 +1,10 @@
-import Layout from '../components/layout';
-import Fill from '../components/fill';
-import Menu from '../components/menu';
-import Bottom from '../components/bottom';
-import CTA from '../components/cta';
-import Icon from '../components/icon';
-import { menuEntries } from '../config';
+import Layout from '@singular/components/layout';
+import Fill from '@singular/components/fill';
+import Menu from '@singular/components/menu';
+import Bottom from '@singular/components/bottom';
+import CTA from '@singular/components/cta';
+import Icon from '@singular/components/icon';
+import { menuEntries } from '@singular/config/index';
 
 const Tarifs = () => {
     return (

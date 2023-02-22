@@ -1,3 +1,4 @@
+'use client';
 import { FunctionComponent } from 'react';
 import Link from 'next/link';
 import LinkedIn from '@mui/icons-material/LinkedIn';

@@ -1,8 +1,8 @@
-import Layout from '../components/layout';
-import { menuEntries } from '../config';
-import Menu from '../components/menu';
-import Fill from '../components/fill';
-import SandpileGame from '../game/sandpile';
+import Layout from '@singular/components/layout';
+import { menuEntries } from '@singular/config/index';
+import Menu from '@singular/components/menu';
+import Fill from '@singular/components/fill';
+import SandpileGame from '@singular/game/sandpile';
 
 const Sandpiles = () => {
     return (

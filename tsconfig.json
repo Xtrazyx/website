@@ -2,11 +2,21 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-     "@singular/components/*": ["components/*"],
-     "@singular/config/*": ["config/*"],
-     "@singular/game/*": ["game/*"],
-     "@singular/styles/*": ["styles/*"],
-     "@singular/pages/*": ["pages/*"]
+      "@singular/components/*": [
+        "components/*"
+      ],
+      "@singular/config/*": [
+        "config/*"
+      ],
+      "@singular/game/*": [
+        "game/*"
+      ],
+      "@singular/styles/*": [
+        "styles/*"
+      ],
+      "@singular/pages/*": [
+        "pages/*"
+      ]
     },
     "target": "es5",
     "lib": [
@@ -25,11 +35,17 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
-    "allowJs": true
+    "allowJs": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ]
   },
   "include": [
     "**/*.ts",
-    "**/*.tsx"
+    "**/*.tsx",
+    ".next/types/**/*.ts"
   ],
   "exclude": [
     "node_modules",
