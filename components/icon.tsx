@@ -16,36 +16,6 @@ const icons = {
     github: () => <Github fontSize="inherit" color={'inherit'} />,
 };
 
-const style = (
-    <style jsx>{`
-        .icon-button {
-            padding: 0;
-            margin: 0;
-            border: none;
-            font-family: Poppins;
-            font-weight: 500;
-            text-align: center;
-            color: var(--font-white);
-            transition-duration: 0.8s;
-            font-size: 72px;
-            line-height: 72px;
-            background: transparent;
-            color: var(--font-turquoise);
-        }
-
-        .icon-button:hover {
-            border-color: var(--font-yellow);
-            color: var(--font-yellow);
-            cursor: pointer;
-        }
-
-        .icon-button svg {
-            padding: 0;
-            margin: 0;
-        }
-    `}</style>
-);
-
 const SocialIcon: FunctionComponent<Props> = (props) => {
     const { url = '', icon } = props;
 
@@ -56,7 +26,6 @@ const SocialIcon: FunctionComponent<Props> = (props) => {
             <Link target={'_blank'} passHref as={url} href={url} className="icon-button">
                 <Icon />
             </Link>
-            {style}
         </>
     );
 };

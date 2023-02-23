@@ -15,7 +15,7 @@ export const menuEntries: MenuItemProps[] = [
     },
     {
         label: <span>Sandpile game</span>,
-        color: 'orange',
+        color: 'blue',
         id: 'sandpiles',
         url: '/sandpiles',
     },

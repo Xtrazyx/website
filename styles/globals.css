@@ -24,7 +24,7 @@
     --bp-large: 1800px;
 }
 
-/* Text Utils ================================================================== */
+/* Utils ================================================================== */
 .color-yellow {
     color: var(--font-yellow);
 }
@@ -55,6 +55,38 @@
 
 .color-grey {
     color: var(--font-grey);
+}
+
+.line-yellow {
+    border-color: var(--font-yellow) !important;
+}
+
+.line-white {
+    border-color: var(--font-white) !important;
+}
+
+.line-blue {
+    border-color: var(--font-blue) !important;
+}
+
+.line-turquoise {
+    border-color: var(--font-turquoise) !important;
+}
+
+.line-orange {
+    border-color: var(--font-orange) !important;
+}
+
+.line-green {
+    border-color: var(--font-green) !important;
+}
+
+.line-red {
+    border-color: var(--font-red) !important;
+}
+
+.line-grey {
+    border-color: var(--font-grey) !important;
 }
 
 .weight-light {
@@ -116,7 +148,7 @@ p {
     flex-direction: column;
     align-items: center;
     min-height: 100vh;
-    width: 100vw;
+    width: min(100%, 100vw);
     align-items: center;
     background-image: linear-gradient(45deg, var(--bg-black) 30%, #20202b, var(--bg-black) 70%);
     background-size: 200%;
@@ -244,6 +276,102 @@ p {
     width: 0;
 }
 
+.social .button {
+    margin-right: 24px;
+}
+
+.cta {
+    padding: 12px;
+    border-radius: 12px;
+    border-color: var(--font-blue);
+    border-width: 4px;
+    border-style: solid;
+    background: linear-gradient(45deg, #211e46, var(--font-blue));
+    font-family: Poppins;
+    font-weight: 500;
+    text-align: center;
+    font-size: 18px;
+    color: var(--font-white);
+    transition-duration: 0.8s;
+}
+
+.cta:hover {
+    border-color: var(--font-yellow);
+    color: var(--font-yellow);
+    cursor: pointer;
+}
+
+.icon-button {
+    padding: 0;
+    margin: 0;
+    border: none;
+    font-family: Poppins;
+    font-weight: 500;
+    text-align: center;
+    color: var(--font-white);
+    transition-duration: 0.8s;
+    font-size: 72px;
+    line-height: 72px;
+    background: transparent;
+    color: var(--font-turquoise);
+}
+
+.icon-button:hover {
+    border-color: var(--font-yellow);
+    color: var(--font-yellow);
+    cursor: pointer;
+}
+
+.icon-button svg {
+    padding: 0;
+    margin: 0;
+}
+
+.line {
+    border-bottom: 4px solid;
+}
+
+.button {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    font-family: Quicksand;
+    font-weight: 300;
+    text-align: left;
+    font-size: var(--menu-font-size);
+    color: var(--font-white);
+    transition-duration: 0.4s;
+}
+
+.item:hover button {
+    font-size: var(--menu-font-size-active);
+    cursor: pointer;
+}
+
+.item {
+    margin: 12px 0;
+    width: 238px;
+    font-size: var(--menu-font-size);
+    color: var(--font-white);
+    transition-duration: 0.4s;
+}
+
+.item:hover {
+    width: 284px;
+    font-size: var(--menu-font-size-active);
+    cursor: pointer;
+}
+
+.active {
+    width: 284px;
+    margin: 18px 0;
+    pointer-events: none;
+}
+
+.button-active {
+    font-size: var(--menu-font-size-active);
+}
+
 /* Sandpile css ================================================================ */
 .default {
     display: grid;
@@ -321,6 +449,13 @@ p {
     .grid-cell {
         width: 30px;
         height: 30px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .grid {
+        grid-template-columns: repeat(auto-fill, 125px);
+        grid-gap: 12px 12px;
     }
 }
 

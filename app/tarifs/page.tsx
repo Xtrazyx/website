@@ -40,12 +40,6 @@ const Tarifs = () => {
                         <Icon icon="twitter" url="https://twitter.com/Xtrazyx" />
                         <Icon icon="github" url="https://github.com/Xtrazyx" />
                     </div>
-
-                    <style jsx>{`
-                        .social .button {
-                            margin-right: 24px;
-                        }
-                    `}</style>
                 </div>
             }
             bottom={<Bottom />}
