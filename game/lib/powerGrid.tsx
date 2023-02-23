@@ -5,6 +5,7 @@ import defaultRegistry from './default/registry';
 import { GridContext } from './context/gridContext';
 import { ExternalContext } from './context/externalContext';
 import { omit } from 'lodash';
+import { RegistryType } from './default/registry';
 
 interface CellData<T> {
     display: string; // used to call component from display registry
@@ -23,23 +24,15 @@ export type UiComponentProps<T> = Omit<CellData<T>, 'display'> & {
     format?: string,
 };
 
-interface DisplayRegistry {
-    text: ComponentType<UiComponentProps<string>>;
-    number: ComponentType<UiComponentProps<number>>;
-    [key: string]: ComponentType<UiComponentProps<any>>;
-}
+export type CellComponentType<T> = ComponentType<UiComponentProps<T>>;
 
 export interface GridDataType {
     [coordinates: string]: CellData<any>;
 }
 
-export interface RegistryType {
-    display: DisplayRegistry;
-}
-
 interface Props {
-    rows: number; // TODO replace by rowStart, rowEnd to feature cell span
-    columns: number; // TODO idem has rows
+    rows: number;
+    columns: number;
     data?: GridDataType;
     registry?: RegistryType;
     calculationRate?: number;
@@ -143,7 +136,7 @@ export const PowerGrid: FunctionComponent<Props> = (props) => {
 
     function Cell(props: CellData<any>) {
         const { display } = props;
-        const Component = registry.display?.[display];
+        const Component = registry.display[display || 'text'];
 
         return <Component {...props} />;
     }
