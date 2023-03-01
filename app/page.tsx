@@ -10,6 +10,7 @@ import CTA from '@singular/components/cta';
 import Avatar from '@singular/components/avatar';
 import Card from '@singular/components/card';
 import VLine from '@singular/components/vLine';
+import { dividerClasses } from '@mui/material';
 
 const Home = () => {
     return (
@@ -65,19 +66,22 @@ const Home = () => {
                                         </li>
                                     </ul>
                                 </p>
+                                <p>
+                                    <span className="big">...et bien plus encore 🚀</span>
+                                </p>
                             </>
                         }
                     />
                     <VLine />
                     <Card
                         header={
-                            <>
+                            <div className="flex-horizontal flex-space-around gap-1-rem">
                                 <Image src={`/technos/ts.png`} width={75} height={75} alt={`logo of Ts`} />
                                 <Image src={`/technos/js.png`} width={75} height={75} alt={`logo of js`} />
-                            </>
+                            </div>
                         }
                         content={
-                            <>
+                            <div>
                                 <h3>Do you speak Js ?</h3>
                                 <p>
                                     Je suis spécialisé depuis + de 5 ans dans les technologies web avec un fort penchant
@@ -87,16 +91,16 @@ const Home = () => {
                                     en front qu’en back sont synonymes de modernité et bénéficient d’un écosystème riche
                                     en librairies et frameworks.
                                 </p>
-                            </>
+                            </div>
                         }
                     />
                     <VLine />
                     <Card
                         header={
-                            <>
+                            <div className="flex-horizontal flex-space-around gap-1-rem">
                                 <Image src={`/technos/react.png`} width={75} height={75} alt={`logo of React`} />
                                 <Image src={`/technos/nextjs.png`} width={75} height={75} alt={`logo of NextJs`} />
-                            </>
+                            </div>
                         }
                         content={
                             <>
@@ -119,10 +123,10 @@ const Home = () => {
                     <VLine />
                     <Card
                         header={
-                            <>
+                            <div className="flex-horizontal flex-space-around gap-1-rem">
                                 <Image src={`/technos/nodejs.png`} width={75} height={75} alt={`logo of NodeJs`} />
                                 <Image src={`/technos/strapi.svg`} width={75} height={75} alt={`logo of Strapi`} />
-                            </>
+                            </div>
                         }
                         content={
                             <>
@@ -139,15 +143,9 @@ const Home = () => {
                         }
                     />
                     <VLine />
-                    <Card
-                        header={<CTA label={<span>Me contacter</span>} url={'/tarifs'} />}
-                        content={
-                            <p>
-                                <span className="big">...et bien plus encore 🚀</span>
-                                <p></p>
-                            </p>
-                        }
-                    />
+                    <div style={{ width: '248px' }}>
+                        <Card content={<CTA label={<span>Me contacter</span>} url={'/tarifs'} />} />
+                    </div>
                 </div>
             }
             bottom={<Bottom />}

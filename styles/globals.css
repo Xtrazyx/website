@@ -109,21 +109,35 @@
 
 .big {
     font-weight: 600;
-    font-size: 32px;
-    margin-top: 48px;
-    line-height: 52px;
+    font-size: 28px;
+    margin-top: 32px;
+    line-height: 32px;
 }
 
 .flex-horizontal {
+    display: flex;
     flex-direction: row;
 }
 
 .flex-vertical {
+    display: flex;
     flex-direction: column;
 }
 
 .flex-align-center {
     align-items: center;
+}
+
+.flex-space-between {
+    justify-content: space-between;
+}
+
+.gap-1-rem {
+    gap: 1rem;
+}
+
+.flex-space-around {
+    justify-content: space-around;
 }
 
 .border-right {
@@ -468,6 +482,10 @@ p {
 
 /* Responsive ================================================================== */
 @media screen and (max-width: 1200px) {
+    h1 {
+        text-align: center;
+    }
+
     .grid {
         margin-left: 0;
         margin-right: 0;
@@ -524,6 +542,10 @@ p {
         display: flex;
         justify-content: center;
         flex-direction: column;
+    }
+
+    .margin-left {
+        margin-left: 0;
     }
 }
 
