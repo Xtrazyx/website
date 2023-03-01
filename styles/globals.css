@@ -9,10 +9,12 @@
     --bg-black: #1b1f24;
     --bg-black-darker: #161b22;
     --bg-black-lighter: #24292f;
+    --line-grey-darker: #30363d;
+    --line-blue: rgba(53, 142, 241, 0.36);
     --font-white: #ffffff;
     --font-grey: #8b949e;
     --font-yellow: #f7e018;
-    --font-blue: #358ef1;
+    --font-blue: rgb(53, 142, 241);
     --font-turquoise: #61dafb;
     --font-orange: #fa743e;
     --font-green: #4bb6b6;
@@ -86,7 +88,7 @@
 }
 
 .line-grey {
-    border-color: var(--font-grey) !important;
+    border-color: var(--line-grey-darker) !important;
 }
 
 .weight-light {
@@ -112,6 +114,35 @@
     line-height: 52px;
 }
 
+.flex-horizontal {
+    flex-direction: row;
+}
+
+.flex-vertical {
+    flex-direction: column;
+}
+
+.flex-align-center {
+    align-items: center;
+}
+
+.border-right {
+    border-right: 1px solid var(--line-grey-darker);
+}
+
+.border-bottom {
+    border-bottom: 1px solid var(--line-grey-darker);
+}
+
+.margin-left {
+    margin-left: 1.5rem;
+}
+
+.margin-center {
+    margin: auto;
+    text-align: center;
+}
+
 /* Tags ======================================================================== */
 html,
 body {
@@ -133,8 +164,15 @@ h1 {
 }
 
 h2 {
-    font-size: 32px;
-    font-family: Poppins;
+    font-size: 28px;
+    font-weight: 300;
+    font-family: Quicksand;
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: 300;
+    font-family: Quicksand;
 }
 
 p {
@@ -281,6 +319,8 @@ p {
 }
 
 .cta {
+    display: inline-block;
+    margin-top: 1rem;
     padding: 12px;
     border-radius: 12px;
     border-color: var(--font-blue);
@@ -372,6 +412,35 @@ p {
     font-size: var(--menu-font-size-active);
 }
 
+.card {
+    display: flex;
+    align-items: stretch;
+    width: min(100%, 1000px);
+    border-radius: 6px;
+    border: 1px solid var(--line-blue);
+    padding: 0.35rem;
+    background-color: var(--bg-black-lighter);
+    box-shadow: 0 0 0 1px #000, 0 0 0 4px var(--bg-black-lighter);
+}
+
+.card-header, .card-content {
+    padding: 0.75rem;
+}
+
+.card-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.v-line {
+    margin-left: 15%;
+    padding-left: 5%;
+    border-left: 1px solid var(--line-blue);
+    height: 6rem;
+}
+
 /* Sandpile css ================================================================ */
 .default {
     display: grid;
@@ -443,6 +512,19 @@ p {
         justify-content: flex-end;
         width: 300px;
     }
+
+    .card {
+        flex-direction: column;
+    }
+
+    .card-header {
+        border-right: none;
+        border-bottom: 1px solid var(--line-grey-darker);
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
 }
 
 @media screen and (max-width: 650px) {
@@ -452,12 +534,21 @@ p {
     }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1200px) and (max-width: 1800px) {
+    .section {
+        width: max(calc(100% - 400px), 800px);
+        padding-top: 24px;
+        padding-right: 24px;
+        padding-left: 64px;
+        padding-top: 24px;
+    }
+
     .grid {
+        width: 100%;
         grid-template-columns: repeat(auto-fill, 125px);
         grid-gap: 12px 12px;
     }
-}
+} 
 
 @media screen and (min-width: 1800px) {
     .grid {

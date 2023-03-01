@@ -2,7 +2,7 @@ import type { MenuItemProps } from '@singular/components/menuItem';
 
 export const menuEntries: MenuItemProps[] = [
     {
-        label: <span>Julien Habert</span>,
+        label: <span>Home</span>,
         color: 'green',
         id: 'menu_jh',
         url: '/',
