@@ -26,7 +26,7 @@ const Home = () => {
                             <>
                                 <Avatar />
                                 <div className="margin-center">
-                                    <h3>Julien Habert since 1978 (almost)</h3>
+                                    <h3>Julien Habert since 1978</h3>
                                 </div>
                             </>
                         }
@@ -46,7 +46,7 @@ const Home = () => {
                                             </span>
                                         </li>
                                         <li>
-                                            j’interviens en <span className="color-yellow weight-bold">support</span>{' '}
+                                            j’interviens <span className="color-yellow weight-bold">intégralement</span>{' '}
                                             pour de l’architecture fullstack
                                         </li>
                                         <li>
@@ -140,13 +140,11 @@ const Home = () => {
                     />
                     <VLine />
                     <Card
-                    header={<CTA label={<span>Me contacter</span>} url={'/tarifs'} />}
+                        header={<CTA label={<span>Me contacter</span>} url={'/tarifs'} />}
                         content={
                             <p>
                                 <span className="big">...et bien plus encore 🚀</span>
-                                <p>
-                                    
-                                </p>
+                                <p></p>
                             </p>
                         }
                     />
