@@ -10,7 +10,6 @@ import CTA from '@singular/components/cta';
 import Avatar from '@singular/components/avatar';
 import Card from '@singular/components/card';
 import VLine from '@singular/components/vLine';
-import { dividerClasses } from '@mui/material';
 
 const Home = () => {
     return (
@@ -36,7 +35,7 @@ const Home = () => {
                                 <h3>Votre développeur personnel</h3>
                                 <p>
                                     Dans une{' '}
-                                    <span className="color-green weight-bold">approche produit holostique</span> appuyée
+                                    <span className="color-green weight-bold">approche produit holistique</span> appuyée
                                     par mes expériences diverfisiées en création informatique (product design, 3d, game
                                     scripting, level design, print, sound design, visual id):{' '}
                                     <ul>
@@ -84,7 +83,7 @@ const Home = () => {
                             <div>
                                 <h3>Do you speak Js ?</h3>
                                 <p>
-                                    Je suis spécialisé depuis + de 5 ans dans les technologies web avec un fort penchant
+                                    Je suis spécialisé depuis + de 6 ans dans les technologies web avec un fort penchant
                                     pour le <span className="color-yellow weight-bold">Javascript</span> et le{' '}
                                     <span className="color-blue weight-bold">Typescript</span> :<br /> alliance entre
                                     flexibilité et rigueur dans l’implémentation, ces languages omniprésents aussi bien
