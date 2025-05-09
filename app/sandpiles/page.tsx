@@ -1,5 +1,5 @@
-import Layout from '@singular/components/layout';
 import { menuEntries } from '@singular/config/index';
+import Layout from '@singular/components/layout';
 import Menu from '@singular/components/menu';
 import Fill from '@singular/components/fill';
 import SandpileGame from '@singular/game/sandpile';

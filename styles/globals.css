@@ -501,6 +501,7 @@ p {
         flex-direction: column-reverse;
         align-items: center;
         overflow: hidden;
+        padding-bottom: 4rem;
     }
 
     .content {

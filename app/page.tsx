@@ -12,6 +12,9 @@ import Card from '@singular/components/card';
 import VLine from '@singular/components/vLine';
 
 const Home = () => {
+    const YEAR_MS = 31536000000; // A year in ms
+    const since = Math.round((new Date().getTime() - new Date('2018-04-01').getTime()) / YEAR_MS);
+
     return (
         <Layout
             title="Dev Fullstack Freelance - Julien Habert - Home"
@@ -83,7 +86,7 @@ const Home = () => {
                             <div>
                                 <h3>Do you speak Js ?</h3>
                                 <p>
-                                    Je suis spécialisé depuis + de 6 ans dans les technologies web avec un fort penchant
+                                    Je suis spécialisé depuis + de {since} ans dans les technologies web avec un fort penchant
                                     pour le <span className="color-yellow weight-bold">Javascript</span> et le{' '}
                                     <span className="color-blue weight-bold">Typescript</span> :<br /> alliance entre
                                     flexibilité et rigueur dans l’implémentation, ces languages omniprésents aussi bien
@@ -113,8 +116,8 @@ const Home = () => {
                                     <span className="color-turquoise weight-bold">ReactJs</span> ainsi que le temps réel
                                     pour piloter des interfaces procédurales. Au titre des activités dans le domaine
                                     d'information, j'ai pu également mettre en place de la génération statique avec le
-                                    Framework front <span className="weight-bold">NextJs</span> (v13 with appDir &
-                                    Server Components).
+                                    Framework front <span className="weight-bold">NextJs</span> (v15 with appDir &
+                                    Server Components / Actions).
                                 </p>
                             </>
                         }
